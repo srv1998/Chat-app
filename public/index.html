@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="icon" href="./img/favicon.png">
+    </head>
+    <body>
+      <div id="join-div">
+          <h1>Join</h1>
+          <form action="/chat.html" method="GET">
+              <div class="join-label">
+                  <label for="" >User Name</label>
+              </div>
+              <div>
+                <input type="text" required id="username" name="username">
+            </div>
+            <div class="join-label">
+                <label for="">Room</label>
+            </div>
+            <div>
+                <input type="text" required id="room" name="room">
+            </div>
+            <div>
+                <button id="submit">Join</button>
+            </div>
+          </form>
+      </div>
+      <script src="./js/index.js"></script>
+    </body>
+</html>
