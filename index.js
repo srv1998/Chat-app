@@ -23,12 +23,6 @@ app.set('view engine', 'html');
 const publicPath= path.join(__dirname,'./public')
 app.use(express.static(publicPath))
 
-app.get('',(req,res)=>{
-    res.render('index.html')
-})
-app.get('/chat',(req,res)=>{
-    res.render('chat.html')
-})
 
 io.on('connection',(socket)=>{
     console.log('new socket.io connection')
